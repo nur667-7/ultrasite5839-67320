@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ultrasite5839</title>
+  <meta name="description" content="Интерактивный сайт, сгенерированный AI Software Factory">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <span class="brand-chip">AI Factory</span>
+        <strong id="siteName">ultrasite5839</strong>
+      </div>
+      <nav class="nav-links">
+        <a href="#features">Функции</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <p class="hero-label">Landing шаблон</p>
+          <h1 id="heroTitle">Загрузка...</h1>
+          <p id="heroSubtitle">Подготавливаем контент...</p>
+          <div class="hero-actions">
+            <button id="heroPrimaryBtn" class="btn btn-primary">Старт</button>
+            <button id="heroSecondaryBtn" class="btn btn-ghost">Подробнее</button>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img id="heroImage" alt="Hero image">
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <h2>Почему это работает</h2>
+        <div id="featureGrid" class="feature-grid"></div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="catalog-head">
+          <h2>Интерактивный каталог</h2>
+          <div class="catalog-controls">
+            <div id="categoryTabs" class="tabs"></div>
+            <input id="searchInput" type="search" placeholder="Поиск по карточкам...">
+          </div>
+        </div>
+        <div id="cardGrid" class="card-grid"></div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <h2>Визуальные референсы по теме</h2>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <h2>Отзывы пользователей</h2>
+        <div class="review-card">
+          <p id="reviewText">Загрузка отзыва...</p>
+          <p id="reviewAuthor" class="review-author"></p>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <h2>Частые вопросы</h2>
+        <div id="faqList" class="faq-list"></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Связаться с нами</h2>
+        <form id="contactForm" class="contact-form">
+          <input required type="text" name="name" placeholder="Ваше имя">
+          <input required type="email" name="email" placeholder="Email">
+          <textarea required name="message" placeholder="Сообщение"></textarea>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="cardModal" class="modal">
+    <div class="modal-content">
+      <button id="closeModalBtn" class="modal-close" aria-label="Закрыть">×</button>
+      <img id="modalImage" alt="card image">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+      <div id="modalTags" class="tag-list"></div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast">Форма отправлена</div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
